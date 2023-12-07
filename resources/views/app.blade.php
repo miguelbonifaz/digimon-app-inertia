@@ -16,6 +16,6 @@
         @inertiaHead
     </head>
     <body class="font-sans antialiased h-full">
-        @inertia()
+        @inertia
     </body>
 </html>
