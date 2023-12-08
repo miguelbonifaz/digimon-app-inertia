@@ -54,4 +54,4 @@ php artisan test
 
 # ¿Que tipo de servicios se usaron para crear el servidor?
 
-En mi caso para el servicio en la nube he usado [Hetzner](https://www.hetzner.com/) y para el desplegar el servidor me he apoyada de la herramienta llamada [Ploi](https://ploi.io), ploi es una herramienta que te permite desplegar tu aplicación en un servidor de una manera muy sencilla, solo debes configurar tu servidor y conectarlo con tu repositorio de git, y cada vez que hagas un push a tu rama principal, se desplegara automáticamente en tu servidor.
+En mi caso para el servicio en la nube he usado [Hetzner](https://www.hetzner.com/) y para el desplegar el proyecto hacia mi servidor me he apoyado de una herramienta llamada [Ploi](https://ploi.io), ¿Que es ploi? Ploi es una herramienta que te permite desplegar tu aplicación en un servidor de una manera muy sencilla, solo debes configurar tu servidor y conectarlo con tu repositorio de git, y cada vez que hagas un push a tu rama principal, se desplegara automáticamente en tu servidor.
