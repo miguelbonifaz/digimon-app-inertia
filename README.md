@@ -19,6 +19,8 @@ composer install
 ```
 
 Copiamos nuestro archivo .env.example a .env y configuramos la base de datos, si deseamos probar nuestros test, agregamos una base de datos adicional llamada `pokemon_app_test`
+
+**Deseo aclarar que a este punto he dejado mi token de `postmark` en el archivo env.example para poder facilitar el envio del email al correo, sugiero registrarse con su email original**
 ```bash
 cp .env.example .env
 ```

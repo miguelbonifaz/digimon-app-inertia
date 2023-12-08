@@ -116,6 +116,11 @@ const submit = () => {
                             </button>
                         </div>
                     </form>
+                    <div class="flex justify-center">
+                        <Link href="/register" class="text-center w-full text-sm text-gray-700 mt-2">
+                            ¿No tienes una cuenta? <b>Registrate aquí</b>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
