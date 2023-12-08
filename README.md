@@ -12,6 +12,8 @@ Primero clonamos el proyecto
 git clone https://github.com/miguelbonifaz/digimon-app-inertia
 ```
 
+una vez clonado ingresamos a nuestra carpeta (`cd digimon-app-inertia`)
+
 Luego instalar las dependencias con composer: 
 
 ```bash
@@ -20,7 +22,7 @@ composer install
 
 Copiamos nuestro archivo .env.example a .env y configuramos la base de datos, si deseamos probar nuestros test, agregamos una base de datos adicional llamada `pokemon_app_test`
 
-**Deseo aclarar que a este punto he dejado mi token de `postmark` en el archivo env.example para poder facilitar el envio del email al correo, sugiero registrarse con su email original**
+**Deseo aclarar que a este punto he dejado mi token de `postmark` en el archivo env.example para poder facilitar el envio del email al correo, lo cual no se necesitar configurar nada, sugiero registrarse con su email original**
 ```bash
 cp .env.example .env
 ```
