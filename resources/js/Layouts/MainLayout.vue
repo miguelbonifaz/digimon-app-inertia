@@ -184,7 +184,9 @@ import {
     MenuItems,
 } from '@headlessui/vue';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline';
-import { Link } from '@inertiajs/vue3';
+import {Link, usePage} from '@inertiajs/vue3';
+
+const page = usePage()
 
 defineProps({
     title: {
@@ -194,8 +196,8 @@ defineProps({
 });
 
 const user = {
-    name: 'Tom Cook',
-    email: 'tom@example.com',
+    name: page.props.auth.user.name,
+    email: page.props.auth.user.email,
     imageUrl:
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 };
