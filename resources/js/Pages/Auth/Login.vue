@@ -1,8 +1,7 @@
 <script setup>
-import GuestLayout from '@/Layouts/GuestLayout.vue';
-import { Head, useForm } from '@inertiajs/vue3';
-import InputError from "@/Components/InputError.vue";
-import Checkbox from "@/Components/Checkbox.vue";
+import { Head, Link, useForm } from '@inertiajs/vue3';
+import InputError from '@/Components/InputError.vue';
+import Checkbox from '@/Components/Checkbox.vue';
 
 defineProps({
     canResetPassword: {
@@ -37,7 +36,9 @@ const submit = () => {
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                     alt="Your Company"
                 />
-                <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                <h2
+                    class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+                >
                     Sign in to your account
                 </h2>
             </div>
@@ -46,7 +47,9 @@ const submit = () => {
                 <div class="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
                     <form class="space-y-6" @submit.prevent="submit">
                         <div>
-                            <label for="email" class="block text-sm font-medium leading-6 text-gray-900"
+                            <label
+                                for="email"
+                                class="block text-sm font-medium leading-6 text-gray-900"
                                 >Email address</label
                             >
                             <div class="mt-2">
@@ -83,7 +86,11 @@ const submit = () => {
 
                         <div class="flex items-center justify-between">
                             <div class="flex items-center">
-                                <Checkbox name="remember" v-model:checked="form.remember" id="remember"/>
+                                <Checkbox
+                                    name="remember"
+                                    v-model:checked="form.remember"
+                                    id="remember"
+                                />
                                 <label
                                     for="remember"
                                     class="ml-3 block text-sm leading-6 text-gray-900"
@@ -92,9 +99,11 @@ const submit = () => {
                             </div>
 
                             <div class="text-sm leading-6">
-                                <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500"
-                                    >Forgot password?</a
-                                >
+                                <Link
+                                    href="/forgot-password"
+                                    class="font-semibold text-indigo-600 hover:text-indigo-500"
+                                    >Forgot password?
+                                </Link>
                             </div>
                         </div>
 
