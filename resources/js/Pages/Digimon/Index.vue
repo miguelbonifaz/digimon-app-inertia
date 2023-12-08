@@ -1,4 +1,5 @@
 <template>
+    <Head title="Digimons" />
     <MainLayout title="Digimons">
         <div class="flex justify-end mb-4">
             <div>
@@ -32,7 +33,7 @@
 import MainLayout from '@/Layouts/MainLayout.vue';
 import DigimonCard from '@/Components/Digimons/DigimonCard.vue';
 import Pagination from '@/Components/Digimons/Pagination.vue';
-import { router } from '@inertiajs/vue3';
+import { Head, router } from '@inertiajs/vue3';
 
 let props = defineProps({
     digimons: {
