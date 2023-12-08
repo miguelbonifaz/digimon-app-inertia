@@ -73,7 +73,6 @@
                                             :method="item.method ?? 'get'"
                                             :href="item.href"
                                             :class="[
-                                                active ? 'bg-gray-100' : '',
                                                 'block px-4 py-2 text-sm text-gray-700',
                                             ]"
                                             >{{ item.name }}
@@ -113,7 +112,6 @@
                             :method="item.method ?? 'get'"
                             :href="item.href"
                             :class="[
-                                active ? 'bg-gray-100' : '',
                                 'block px-4 py-2 text-sm text-gray-700',
                             ]"
                             >{{ item.name }}
@@ -148,7 +146,6 @@
                                 :method="item.method ?? 'get'"
                                 :href="item.href"
                                 :class="[
-                                    active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700',
                                 ]"
                                 >{{ item.name }}
@@ -168,7 +165,7 @@
                 </div>
             </header>
             <main>
-                <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-7xl px-4 pt-3 lg:px-8">
                     <slot></slot>
                 </div>
             </main>
@@ -203,10 +200,10 @@ const user = {
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 };
 const navigation = [
-    { name: 'Dashboard', href: route('dashboard'), current: route().current('dashboard') },
+    { name: 'Digimons', href: route('digimons.index'), current: route().current('digimons.index') },
 ];
 const userNavigation = [
-    { name: 'Your Profile', href: route('profile.edit') },
-    { name: 'Sign out', href: route('logout'), method: 'post' },
+    { name: 'Your Profile', href: route('profile.edit'), current: route().current('profile.edit') },
+    { name: 'Sign out', href: route('logout'), method: 'post', current: false },
 ];
 </script>

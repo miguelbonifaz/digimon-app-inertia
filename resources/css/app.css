@@ -5,3 +5,7 @@
 #app {
     @apply h-full;
 }
+
+html {
+    scroll-behavior: smooth;
+}

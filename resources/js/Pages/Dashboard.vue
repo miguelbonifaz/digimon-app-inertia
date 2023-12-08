@@ -4,8 +4,8 @@ import MainLayout from '@/Layouts/MainLayout.vue';
 </script>
 
 <template>
-    <Head title="Dashboard" />
-    <MainLayout title="Dashboard!!">
+    <Head title="Digimons" />
+    <MainLayout title="Digimons">
 
     </MainLayout>
 </template>
